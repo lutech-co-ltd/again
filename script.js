@@ -3,20 +3,19 @@
 
   var header = document.getElementById('site-header');
   var nav = document.getElementById('site-nav');
-  var toggle = document.querySelector('.nav-toggle');
+  var toggle = document.querySelector('.header__menu-btn');
   var form = document.getElementById('waitlist-form');
   var message = document.getElementById('waitlist-message');
 
-  /* Header shadow on scroll */
   function onScroll() {
-    if (!header) return;
-    header.classList.toggle('is-scrolled', window.scrollY > 8);
+    if (header) {
+      header.classList.toggle('is-scrolled', window.scrollY > 4);
+    }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* Mobile navigation */
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var open = toggle.getAttribute('aria-expanded') === 'true';
@@ -32,7 +31,6 @@
     });
   }
 
-  /* Waitlist form placeholder — no backend yet */
   if (form && message) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -47,7 +45,7 @@
         return;
       }
 
-      message.textContent = '感謝你的關注！我們會在上架時通知你。';
+      message.textContent = '感謝你的關注，我們會在上架時通知你。';
       form.reset();
     });
   }
