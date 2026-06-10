@@ -453,10 +453,6 @@ a:hover { color: var(--text); }
   overflow: hidden;
 }
 
-.emotional--last {
-  padding-bottom: 120px;
-}
-
 .emotional__inner {
   position: relative;
   max-width: 640px;
