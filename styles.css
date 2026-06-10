@@ -16,6 +16,7 @@
   --text-wrap: 640px;
   --header-h: 64px;
   --ease: 0.22s ease;
+  --font-logo: "Cormorant Garamond", Baskerville, "Libre Baskerville", Georgia, "Times New Roman", serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -533,10 +534,10 @@ a:hover { color: var(--ink); }
 }
 
 .footer__logo {
-  font-family: "Noto Serif TC", Georgia, serif;
-  font-size: 15px;
+  font-family: var(--font-logo);
+  font-size: 17px;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   color: var(--ink);
 }
 
