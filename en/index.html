@@ -8,21 +8,18 @@
   <link rel="alternate" hreflang="zh-Hant" href="../index.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=20260611" />
 </head>
-<body>
+<body class="landing">
 
-  <!-- Header -->
-  <header class="site-header" id="site-header">
-    <div class="container site-header__inner">
-      <a class="site-header__logo" href="#top">AGAIN</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
-        <span class="nav-toggle__line"></span>
+  <header class="header" id="site-header">
+    <div class="wrap header__inner">
+      <a class="header__logo" href="#top">AGAIN</a>
+      <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <nav class="header__nav" id="site-nav" aria-label="Main navigation">
         <a href="#philosophy">Philosophy</a>
         <a href="#features">Features</a>
         <a class="lang-switch" href="../index.html" hreflang="zh-Hant">中文</a>
@@ -32,109 +29,87 @@
 
   <main id="top">
 
-    <!-- Hero -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="hero__brand">AGAIN</p>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="hero__kicker">Mature Dating App</p>
           <h1 class="hero__title">Rediscover Each Other</h1>
-          <p class="hero__subtitle">
+          <p class="hero__lead">
             A calm space for mature adults to connect.<br />
             Not endless swiping — take time to truly understand someone.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#philosophy">Discover AGAIN</a>
+            <a class="btn btn--fill" href="#philosophy">Discover AGAIN</a>
           </div>
         </div>
-        <div class="hero__media">
-          <div class="hero__image-frame">
-            <img
-              src="../assets/again-hero-visual.png"
-              alt="Again brand visual"
-              width="1672"
-              height="941"
-              loading="eager"
-              decoding="async"
-            />
-          </div>
-        </div>
+        <figure class="hero__visual">
+          <img
+            src="../assets/again-hero-visual.png"
+            alt="AGAIN brand visual"
+            width="1672"
+            height="941"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </div>
     </section>
 
-    <!-- Brand Intro -->
-    <section class="brand-intro" id="philosophy">
-      <div class="container brand-intro__inner">
-        <p class="section-eyebrow">Our Philosophy</p>
-        <div class="brand-intro__text">
+    <section class="manifesto" id="philosophy">
+      <div class="wrap manifesto__grid">
+        <div class="manifesto__head">
+          <p class="eyebrow">Our Philosophy</p>
+          <h2 class="manifesto__title">Start with Understanding</h2>
+        </div>
+        <div class="manifesto__body">
           <p>AGAIN is built for single adults aged 30–50 with marriage or parenting experience.</p>
-          <p>Here, there is no rush to swipe — and no pressure to define yourself too soon.</p>
-          <p>We believe connection begins with understanding and the right pace.</p>
+          <p>Here, there is no rush to swipe — and no pressure to define yourself too soon. We believe connection begins with understanding and the right pace.</p>
         </div>
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="features" id="features">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-eyebrow">What Makes AGAIN Different</p>
-          <h2 class="section-title">Designed for Mature Relationships</h2>
+    <section class="pillars" id="features">
+      <div class="wrap">
+        <header class="pillars__head">
+          <p class="eyebrow">What Makes AGAIN Different</p>
+          <h2 class="pillars__title">Designed for Mature Relationships</h2>
         </header>
-        <div class="features__grid">
-
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 19h16M6 16V8l6-4 6 4v8" />
-                <path d="M9 12h6" />
-              </svg>
+        <ol class="pillar-list">
+          <li class="pillar-item">
+            <span class="pillar-item__num" aria-hidden="true">01</span>
+            <div class="pillar-item__content">
+              <h3>Story Lookbook</h3>
+              <p>Introduce yourself through stories, not labels — your profile reads like a personal lookbook.</p>
             </div>
-            <h3 class="feature-card__title">Story Lookbook</h3>
-            <p class="feature-card__desc">Introduce yourself through stories, not labels — your profile reads like a personal lookbook.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3c-2 3-5 5-5 8a5 5 0 1 0 10 0c0-3-3-5-5-8z" />
-                <path d="M8 21h8" />
-              </svg>
+          </li>
+          <li class="pillar-item">
+            <span class="pillar-item__num" aria-hidden="true">02</span>
+            <div class="pillar-item__content">
+              <h3>Compatibility Notes</h3>
+              <p>Values, lifestyle, and subtle details help you see a deeper layer of compatibility.</p>
             </div>
-            <h3 class="feature-card__title">Compatibility Notes</h3>
-            <p class="feature-card__desc">Values, lifestyle, and subtle details help you see a deeper layer of compatibility.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 7v5l3 2" />
-              </svg>
+          </li>
+          <li class="pillar-item">
+            <span class="pillar-item__num" aria-hidden="true">03</span>
+            <div class="pillar-item__content">
+              <h3>Slow Discovery</h3>
+              <p>No endless scrolling — focus on one person at a time and get to know them properly.</p>
             </div>
-            <h3 class="feature-card__title">Slow Discovery</h3>
-            <p class="feature-card__desc">No endless scrolling — focus on one person at a time and get to know them properly.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
+          </li>
+          <li class="pillar-item">
+            <span class="pillar-item__num" aria-hidden="true">04</span>
+            <div class="pillar-item__content">
+              <h3>Safe Community</h3>
+              <p>A low-pressure space for experienced adults — less performance, more genuine connection.</p>
             </div>
-            <h3 class="feature-card__title">Safe Community</h3>
-            <p class="feature-card__desc">A low-pressure space for experienced adults — less performance, more genuine connection.</p>
-          </article>
-
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- Emotional Block -->
-    <section class="emotional" aria-label="Brand voice">
-      <div class="container emotional__inner">
-        <div class="emotional__glow" aria-hidden="true"></div>
-        <blockquote class="emotional__quote">
+    <section class="interlude interlude--last" aria-label="Brand voice">
+      <div class="wrap interlude__inner">
+        <blockquote>
           <p>Not every connection needs to start with impulse.</p>
           <p>Some relationships are meant to unfold slowly.</p>
         </blockquote>
@@ -143,14 +118,13 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="site-footer__logo">AGAIN</span>
-        <span class="site-footer__copy">© 2026 AGAIN · LuTech.co</span>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">AGAIN</span>
+        <span class="footer__copy">© 2026 AGAIN · LuTech.co</span>
       </div>
-      <nav class="site-footer__nav" aria-label="Footer links">
+      <nav class="footer__nav" aria-label="Footer links">
         <a href="../privacy.html">Privacy Policy</a>
         <a href="../terms.html">Terms of Use</a>
         <a href="../community.html">Community Guidelines</a>

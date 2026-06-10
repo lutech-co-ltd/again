@@ -3,11 +3,11 @@
 
   var header = document.getElementById('site-header');
   var nav = document.getElementById('site-nav');
-  var toggle = document.querySelector('.nav-toggle');
+  var toggle = document.querySelector('.header__menu-btn');
 
   function onScroll() {
     if (header) {
-      header.classList.toggle('is-scrolled', window.scrollY > 6);
+      header.classList.toggle('is-scrolled', window.scrollY > 4);
     }
   }
 
