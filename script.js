@@ -3,19 +3,21 @@
 
   var header = document.getElementById('site-header');
   var nav = document.getElementById('site-nav');
-  var toggle = document.querySelector('.header__menu-btn');
+  var toggle = document.querySelector('.nav-toggle');
   var form = document.getElementById('waitlist-form');
-  var message = document.getElementById('waitlist-message');
+  var msg = document.getElementById('waitlist-msg');
 
+  /* Scroll shadow on header */
   function onScroll() {
     if (header) {
-      header.classList.toggle('is-scrolled', window.scrollY > 4);
+      header.classList.toggle('is-scrolled', window.scrollY > 6);
     }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* Mobile nav */
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
       var open = toggle.getAttribute('aria-expanded') === 'true';
@@ -31,21 +33,22 @@
     });
   }
 
-  if (form && message) {
+  /* Waitlist form (UI only — no backend) */
+  if (form && msg) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var input = form.querySelector('#waitlist-email');
+      var input = document.getElementById('email');
       var email = input && input.value.trim();
 
-      message.classList.remove('is-error');
+      msg.classList.remove('is-error');
 
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        message.textContent = '請輸入有效的電子郵件地址。';
-        message.classList.add('is-error');
+        msg.textContent = '請輸入有效的電子郵件地址。';
+        msg.classList.add('is-error');
         return;
       }
 
-      message.textContent = '感謝你的關注，我們會在上架時通知你。';
+      msg.textContent = '感謝你的關注！我們會在上架時第一時間通知你。';
       form.reset();
     });
   }
