@@ -3,62 +3,189 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AGAIN — 為 30–50 歲、帶著故事重新出發的妳／你。慢節奏、價值觀驅動的交友體驗。" />
+  <meta name="description" content="AGAIN — 給成熟大人的安心交友空間。專為 30–50 歲、有婚史或育兒脈絡的單身成人而設。不是快速滑動，而是慢慢讀懂一個人。" />
   <title>AGAIN — 重新認識彼此</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="site.css" />
 </head>
 <body class="landing">
-  <header class="hero">
-    <h1 class="logo">AGAIN</h1>
-    <p class="tagline">重新認識彼此</p>
-    <p class="hero-copy">
-      專為 30–50 歲、有婚史或育兒脈絡的單身成人而設。<br />
-      不是快速滑動，而是一次認真讀完一份生活誌，再決定是否想認識對方。
-    </p>
-    <div class="cta-row">
-      <span class="cta cta-primary cta-soon">App Store 即將上架</span>
-      <span class="cta cta-secondary cta-soon">Google Play 即將上架</span>
+
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="#top" aria-label="AGAIN 首頁">AGAIN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+        <a href="#philosophy">理念</a>
+        <a href="#features">特色</a>
+        <a href="#waitlist">上架資訊</a>
+      </nav>
     </div>
-    <p style="font-size:0.85rem;color:#8C6F5A;margin:0;">你的步調，你自己決定。</p>
   </header>
 
-  <section class="section">
-    <h2>為什麼是 AGAIN</h2>
-    <div class="pillars">
-      <article class="pillar">
-        <h3>敘事生活誌</h3>
-        <p>照片與價值觀交錯呈現，像翻一本生活雜誌，而非秒懂的一張臉。</p>
-      </article>
-      <article class="pillar">
-        <h3>契合微文案</h3>
-        <p>從育兒觀、生活節奏到未來想像，先看見你們的共鳴，再開口聊天。</p>
-      </article>
-      <article class="pillar">
-        <h3>慢速發現</h3>
-        <p>一次專注一位對象，讀完再決定。沒有 24 小時倒數，沒有刷臉壓力。</p>
-      </article>
-      <article class="pillar">
-        <h3>安心社群</h3>
-        <p>檢舉、封鎖與帳號註銷機制完備，守護成熟的交友空間。</p>
-      </article>
-    </div>
-  </section>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">成熟交友 App</p>
+          <h1 class="hero__title" id="hero-title">重新認識彼此</h1>
+          <p class="hero__subtitle">
+            給成熟大人的安心交友空間。<br />
+            不是快速滑動，而是慢慢讀懂一個人。
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#waitlist">加入等待名單</a>
+            <a class="btn btn--secondary" href="#philosophy">了解 AGAIN</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <figure class="hero__figure">
+            <img
+              src="assets/again-hero-visual.png"
+              alt="AGAIN 品牌主視覺 — 溫暖低飽和的抽象幾何圖形"
+              width="1672"
+              height="941"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
 
-  <aside class="audience">
-    <p>
-      若你曾經歷婚姻或育兒，仍相信關係可以溫柔重來——<br />
-      AGAIN 為這樣的你，保留一個不趕時間的入口。
-    </p>
-  </aside>
+    <!-- Brand positioning -->
+    <section class="intro" id="philosophy" aria-labelledby="intro-title">
+      <div class="container intro__inner">
+        <p class="section-label">品牌理念</p>
+        <h2 class="intro__title" id="intro-title">從理解與節奏開始</h2>
+        <div class="intro__copy">
+          <p>Again 專為 30–50 歲、有婚史或育兒脈絡的單身成人而設。</p>
+          <p>在這裡，不必急著滑動，也不必急著定義自己。</p>
+          <p>我們希望讓關係從理解與節奏開始。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">產品特色</p>
+          <h2 class="section-title" id="features-title">為成熟關係而設計</h2>
+        </header>
+        <div class="features__grid">
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19h16M6 16V8l6-4 6 4v8M9 12h6" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">敘事生活誌</h3>
+            <p class="feature-card__text">用故事而不是標籤介紹自己，讓個人頁面更像一份生活誌。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c-1.5 2.5-4 4.5-4 7a4 4 0 1 0 8 0c0-2.5-2.5-4.5-4-7z" />
+                <path d="M8 21h8M10 18h4" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">契合微文案</h3>
+            <p class="feature-card__text">透過價值觀、生活感與細節，幫助彼此看見更深一層的相容性。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">慢速發現</h3>
+            <p class="feature-card__text">不鼓勵無止盡滑動，而是一次好好認識一個人。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" />
+                <path d="M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <h3 class="feature-card__title">安心社群</h3>
+            <p class="feature-card__text">給有經歷的大人一個少壓力、少表演、能安心相處的交友環境。</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Emotional block -->
+    <section class="philosophy-block" aria-label="品牌態度">
+      <div class="container philosophy-block__inner">
+        <div class="philosophy-block__shape" aria-hidden="true"></div>
+        <blockquote class="philosophy-block__quote">
+          <p>不是每段關係都要從衝動開始。</p>
+          <p>有些關係，適合慢慢靠近。</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Waitlist / CTA -->
+    <section class="waitlist" id="waitlist" aria-labelledby="waitlist-title">
+      <div class="container waitlist__inner">
+        <header class="section-header section-header--center">
+          <p class="section-label">即將上架</p>
+          <h2 class="section-title" id="waitlist-title">第一時間收到通知</h2>
+          <p class="waitlist__lead">留下你的信箱，我們會在 App 上架時通知你。</p>
+        </header>
+
+        <div class="store-badges" aria-label="應用程式商店">
+          <span class="store-badge store-badge--disabled">App Store 即將上架</span>
+          <span class="store-badge store-badge--disabled">Google Play 即將上架</span>
+        </div>
+
+        <form class="waitlist-form" id="waitlist-form" novalidate>
+          <label class="visually-hidden" for="waitlist-email">電子郵件</label>
+          <input
+            class="waitlist-form__input"
+            type="email"
+            id="waitlist-email"
+            name="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+          />
+          <button class="btn btn--primary waitlist-form__submit" type="submit">送出</button>
+        </form>
+        <p class="waitlist-form__note" id="waitlist-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">隱私政策</a>
-      <a href="terms.html">使用條款</a>
-      <a href="community.html">社群規範</a>
-      <a href="mailto:support@again.app">聯絡我們</a>
-    </nav>
-    <p>© 2026 AGAIN · 重新認識彼此</p>
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__logo">AGAIN</span>
+        <p class="site-footer__copy">© LuTech.co</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="頁尾連結">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="community.html">Community</a>
+        <a href="mailto:support@again.app">Contact</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
