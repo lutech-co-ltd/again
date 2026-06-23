@@ -6,11 +6,31 @@
 
 | 檔案 | 用途 |
 |------|------|
-| `index.html` | 一頁式推廣官網 |
+| `index.html` | 一頁式推廣官網（含 App 功能、活動、點數、安全說明） |
+| `help.html` | 幫助中心 FAQ（與 App 內幫助中心同步） |
 | `privacy.html` | 隱私政策（App Store / Play 必填 URL） |
 | `terms.html` | 使用條款 |
 | `community.html` | 社群規範 |
-| `site.css` | 共用樣式 |
+| `en/index.html` | 英文首頁 |
+| `en/help.html` | 英文幫助中心 |
+| `styles.css` | 共用樣式 |
+
+## 與 App 同步
+
+法律文件正文應與 `docs/legal/` 一致（App `LEGAL_BASE_URL` 可指向本官網或 Firebase Hosting）。更新流程：
+
+```bash
+# 1. 先改 docs/legal/*.html（或從該目錄複製正文）
+cp docs/legal/terms.html docs/web/terms.html   # 需保留 web 的 back-link 與 styles.css 外殼
+cp docs/legal/privacy.html docs/web/privacy.html
+cp docs/legal/community.html docs/web/community.html
+
+# 2. 若使用 Firebase 備用 hosting
+cp docs/legal/*.{html,css} AgainApp/hosting/legal/
+
+# 3. 幫助中心 FAQ 與 App 同步來源
+# AgainApp/src/constants/helpCenter.js → docs/web/help.html
+```
 
 ## GitHub Pages 部署（建議）
 
