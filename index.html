@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AGAIN — 慢慢認識彼此。慢速發現、先放著、線下活動與活動後輕連結，為成熟關係而設。" />
+  <meta name="description" content="AGAIN — 給走過一段、也想再被好好對待的人。慢慢認識彼此：生活誌、先放著、線下見面後再決定。" />
   <title>AGAIN — 慢慢認識彼此</title>
   <link rel="alternate" hreflang="en" href="./en/index.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260629" />
+  <link rel="stylesheet" href="./styles.css?v=20260712" />
 </head>
 <body class="landing">
 
@@ -20,9 +20,9 @@
         <span></span><span></span>
       </button>
       <nav class="header__nav" id="site-nav" aria-label="主要導覽">
-        <a href="#philosophy">理念</a>
-        <a href="#app">App 功能</a>
-        <a href="#features">特色</a>
+        <a href="#resonate">理念</a>
+        <a href="#how">怎麼運作</a>
+        <a href="#start">開始</a>
         <a href="help.html">幫助</a>
         <a class="lang-switch" href="./en/index.html" hreflang="en">EN</a>
       </nav>
@@ -34,13 +34,18 @@
     <section class="hero">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <p class="hero__kicker">成熟交友 App</p>
+          <p class="hero__brand" aria-label="AGAIN">AGAIN</p>
+          <p class="hero__kicker">給走過一段、也想再被好好對待的人</p>
           <h1 class="hero__title">慢慢認識彼此</h1>
-          <p class="hero__lead">給自己一次相遇的機會</p>
+          <p class="hero__lead">孩子還在長大，你也還想被理解。<br />關係，可以換一種速度。</p>
           <div class="hero__actions">
-            <a class="btn btn--fill" href="#app">了解 App 功能</a>
-            <a class="btn btn--ghost" href="help.html">幫助中心</a>
+            <a
+              class="btn btn--fill"
+              href="mailto:support@again.app?subject=%E7%94%B3%E8%AB%8B%E8%A9%A6%E7%94%A8%20AGAIN"
+            >開始慢慢認識</a>
+            <a class="btn btn--ghost" href="#how">看看怎麼運作</a>
           </div>
+          <p class="hero__cta-note">即將開放下載 · 先來信申請試用</p>
         </div>
         <figure class="hero__visual">
           <img
@@ -55,120 +60,83 @@
       </div>
     </section>
 
-    <section class="manifesto" id="philosophy">
-      <div class="wrap manifesto__grid">
-        <div class="manifesto__head">
-          <p class="eyebrow">品牌理念</p>
-          <h2 class="manifesto__title">從理解與節奏開始</h2>
+    <section class="resonate" id="resonate">
+      <div class="wrap resonate__inner reveal">
+        <p class="eyebrow">你是不是也這樣</p>
+        <ul class="resonate__list">
+          <li>不是不想認真，是不想再被當成第一次談戀愛。</li>
+          <li>有過婚史或孩子，不該變成檔案上的標籤壓力。</li>
+          <li>先看懂一個人，再決定要不要靠近。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="act" id="how">
+      <div class="wrap act__grid reveal">
+        <div class="act__copy">
+          <p class="eyebrow">幕一</p>
+          <h2 class="act__title">個人頁，像一本生活誌</h2>
+          <p class="act__lead">一次好好認識一個人——用故事與生活節奏，而不是一排標籤。</p>
         </div>
-        <div class="manifesto__body">
-          <p>為帶著人生故事的成熟大人而設。</p>
-          <p>關係從理解與節奏開始，不必急著定義自己。</p>
-        </div>
+        <aside class="lookbook-preview" aria-label="生活誌預覽示意">
+          <div class="lookbook-preview__frame">
+            <div class="lookbook-preview__photo" aria-hidden="true"></div>
+            <div class="lookbook-preview__body">
+              <p class="lookbook-preview__name">雅婷，38 歲</p>
+              <p class="lookbook-preview__meta">台北市 · 大安區</p>
+              <div class="lookbook-preview__reason">
+                <p class="lookbook-preview__reason-label">本次推薦主因</p>
+                <p class="lookbook-preview__reason-text">都願意讓關係依孩子節奏自然靠近</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="app-overview" id="app">
-      <div class="wrap">
-        <header class="pillars__head">
-          <p class="eyebrow">App 功能</p>
-          <h2 class="pillars__title">四個分頁，一條溫柔路徑</h2>
-        </header>
-        <ol class="app-grid">
-          <li class="app-card">
-            <h3>發現</h3>
-            <p>瀏覽會員生活誌，一次認識一個人。以 ✕、先放著或 ♥ 表達意願；可能顯示一句推薦感受。雙向喜歡即配對，可調整偏好篩選與地區範圍。</p>
+    <section class="act act--alt">
+      <div class="wrap act__stack reveal">
+        <p class="eyebrow">幕二</p>
+        <h2 class="act__title">還沒準備好說喜歡，也可以先放著</h2>
+        <p class="act__lead">慢速發現，不鼓勵無止盡滑動。你的節奏，由你決定。</p>
+        <ul class="pace-row">
+          <li class="pace-chip">
+            <span class="pace-chip__mark" aria-hidden="true">✕</span>
+            <span class="pace-chip__label">先看下一位</span>
           </li>
-          <li class="app-card">
-            <h3>訊息</h3>
-            <p>配對成功後開始對話。可封鎖或檢舉不當行為，守護自己的節奏與界線。</p>
+          <li class="pace-chip pace-chip--soft">
+            <span class="pace-chip__mark" aria-hidden="true">◇</span>
+            <span class="pace-chip__label">先放著<span class="pace-chip__hint">不通知對方</span></span>
           </li>
-          <li class="app-card">
-            <h3>活動</h3>
-            <p>發起或報名線下社交聚會，含親子同行選項。氛圍標籤、入席暖身與聚會默契協助感受節奏；活動結束後可選擇輕連結。以微光點數作為活動誠意金，參與前需同意活動安全守則。</p>
+          <li class="pace-chip pace-chip--heart">
+            <span class="pace-chip__mark" aria-hidden="true">♥</span>
+            <span class="pace-chip__label">慢慢認識彼此</span>
           </li>
-          <li class="app-card">
-            <h3>個人</h3>
-            <p>編輯檔案與生活節奏、填寫「聚會與相處」偏好、管理點數儲值、通知設定、法律與隱私、帳號安全與幫助中心。</p>
-          </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
-    <section class="pillars" id="features">
-      <div class="wrap">
-        <header class="pillars__head">
-          <p class="eyebrow">產品特色</p>
-          <h2 class="pillars__title">為成熟關係而設計</h2>
-        </header>
-        <ol class="pillar-list">
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">01</span>
-            <div class="pillar-item__content">
-              <h3>敘事生活誌</h3>
-              <p>用故事而不是標籤介紹自己，讓個人頁面更像一份生活誌。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">02</span>
-            <div class="pillar-item__content">
-              <h3>契合微文案</h3>
-              <p>依價值觀、生活感與聚會相處方式，顯示契合提示與發現頁推薦理由——僅供感受參考，不是評分或保證。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">03</span>
-            <div class="pillar-item__content">
-              <h3>慢速發現</h3>
-              <p>不鼓勵無止盡滑動，而是一次好好認識一個人。「先放著」讓您暫緩決定，不打擾對方。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">04</span>
-            <div class="pillar-item__content">
-              <h3>線下活動媒合</h3>
-              <p>從線上認識延伸到真實聚會；主辦可選入席問題，報名者可填暖身回覆。活動後 72 小時內，雙方互選才可開啟輕連結對話。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">05</span>
-            <div class="pillar-item__content">
-              <h3>微光點數</h3>
-              <p>App 內虛擬貨幣，用於活動報名與發起，以及發現頁「微光邀約」。透過 App Store / Google Play 儲值，不可兌換現金。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">06</span>
-            <div class="pillar-item__content">
-              <h3>安心社群</h3>
-              <p>檢舉、封鎖與審核機制；活動檢與主辦人未到回報。活動信用標章僅表示出席完成紀錄，非身份認證。詳見<a href="community.html">社群規範</a>。</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">07</span>
-            <div class="pillar-item__content">
-              <h3>活動後輕連結</h3>
-              <p>線下見過面後，若雙方都想再聯繫，可開啟有時限與訊息上限的延續對話；單方面選擇不會通知對方，節奏由您掌握。</p>
-            </div>
-          </li>
-        </ol>
+    <section class="act">
+      <div class="wrap act__narrow reveal">
+        <p class="eyebrow">幕三</p>
+        <h2 class="act__title">線下見過，再決定要不要更深</h2>
+        <p class="act__lead">發起或參加真實聚會——也可以親子同行。見過面之後，若雙方都想再聯繫，才開啟有時限的延續對話。</p>
+        <p class="act__highlight">只有雙方都想，才會開啟延續對話。</p>
+        <p class="act__aside">活動入席使用微光點數作為誠意金；細節見<a href="help.html">幫助中心</a>。</p>
       </div>
     </section>
 
-    <section class="safety-strip" id="safety" aria-label="安全提示">
-      <div class="wrap safety-strip__inner">
-        <p class="safety-strip__title">社群安全</p>
-        <p>可在發現、對話、已配對檔案或活動詳情檢舉與封鎖。涉及緊急安全請先報警，亦可來信 <a href="mailto:support@again.app">support@again.app</a>。</p>
-        <a class="btn btn--ghost btn--sm" href="help.html">常見問題</a>
-      </div>
-    </section>
-
-    <section class="interlude interlude--last" aria-label="品牌態度">
-      <div class="wrap interlude__inner">
+    <section class="close-cta" id="start">
+      <div class="wrap close-cta__inner reveal">
         <blockquote>
-          <p>不是每段關係都要從衝動開始。</p>
           <p>有些關係，適合慢慢靠近。</p>
         </blockquote>
+        <p class="close-cta__lead">給自己一次，用對的速度重新開始。</p>
+        <a
+          class="btn btn--fill"
+          href="mailto:support@again.app?subject=%E7%94%B3%E8%AB%8B%E8%A9%A6%E7%94%A8%20AGAIN"
+        >開始慢慢認識</a>
+        <p class="hero__cta-note">即將開放 · 來信申請試用</p>
       </div>
     </section>
 
@@ -188,6 +156,9 @@
         <a href="mailto:support@again.app">聯絡我們</a>
         <a class="lang-switch" href="./en/index.html" hreflang="en">English</a>
       </nav>
+    </div>
+    <div class="wrap footer__safety">
+      <p>可隨時檢舉與封鎖。緊急安全請先報警，亦可來信 <a href="mailto:support@again.app">support@again.app</a>。</p>
     </div>
   </footer>
 

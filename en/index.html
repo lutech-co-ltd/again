@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AGAIN — Know each other slowly. Slow discovery, Save for Later, offline meetups, and post-event light connect for mature relationships." />
+  <meta name="description" content="AGAIN — For people who have lived a chapter, and still want to be treated well. Know each other slowly: lookbooks, save for later, meet offline before going deeper." />
   <title>AGAIN — Know Each Other Slowly</title>
   <link rel="alternate" hreflang="zh-Hant" href="../index.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=20260629" />
+  <link rel="stylesheet" href="../styles.css?v=20260712" />
 </head>
 <body class="landing">
 
@@ -20,9 +20,9 @@
         <span></span><span></span>
       </button>
       <nav class="header__nav" id="site-nav" aria-label="Main navigation">
-        <a href="#philosophy">Philosophy</a>
-        <a href="#app">App</a>
-        <a href="#features">Features</a>
+        <a href="#resonate">Why</a>
+        <a href="#how">How it works</a>
+        <a href="#start">Start</a>
         <a href="help.html">Help</a>
         <a class="lang-switch" href="../index.html" hreflang="zh-Hant">中文</a>
       </nav>
@@ -34,13 +34,18 @@
     <section class="hero">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <p class="hero__kicker">Mature Dating App</p>
+          <p class="hero__brand" aria-label="AGAIN">AGAIN</p>
+          <p class="hero__kicker">For people who have lived a chapter — and still want to be treated well</p>
           <h1 class="hero__title">Know Each Other Slowly</h1>
-          <p class="hero__lead">Give yourself a chance to meet someone new</p>
+          <p class="hero__lead">Your kids are still growing. You still want to be understood.<br />Relationships can move at a different pace.</p>
           <div class="hero__actions">
-            <a class="btn btn--fill" href="#app">Explore the App</a>
-            <a class="btn btn--ghost" href="help.html">Help Center</a>
+            <a
+              class="btn btn--fill"
+              href="mailto:support@again.app?subject=AGAIN%20early%20access"
+            >Start slowly</a>
+            <a class="btn btn--ghost" href="#how">See how it works</a>
           </div>
+          <p class="hero__cta-note">Coming soon · Email us for early access</p>
         </div>
         <figure class="hero__visual">
           <img
@@ -55,120 +60,83 @@
       </div>
     </section>
 
-    <section class="manifesto" id="philosophy">
-      <div class="wrap manifesto__grid">
-        <div class="manifesto__head">
-          <p class="eyebrow">Our Philosophy</p>
-          <h2 class="manifesto__title">Start with Understanding</h2>
+    <section class="resonate" id="resonate">
+      <div class="wrap resonate__inner reveal">
+        <p class="eyebrow">Does this sound like you</p>
+        <ul class="resonate__list">
+          <li>You are ready to be serious — just not treated like first love all over again.</li>
+          <li>A past marriage or children should not become label pressure on a profile.</li>
+          <li>Understand someone first. Then decide whether to move closer.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="act" id="how">
+      <div class="wrap act__grid reveal">
+        <div class="act__copy">
+          <p class="eyebrow">Act one</p>
+          <h2 class="act__title">A profile that reads like a lookbook</h2>
+          <p class="act__lead">Meet one person at a time — through stories and life rhythm, not a wall of tags.</p>
         </div>
-        <div class="manifesto__body">
-          <p>For adults with real life stories.</p>
-          <p>Connection starts with understanding — no rush to define yourself.</p>
-        </div>
+        <aside class="lookbook-preview" aria-label="Lookbook preview">
+          <div class="lookbook-preview__frame">
+            <div class="lookbook-preview__photo" aria-hidden="true"></div>
+            <div class="lookbook-preview__body">
+              <p class="lookbook-preview__name">Yating, 38</p>
+              <p class="lookbook-preview__meta">Taipei · Da’an</p>
+              <div class="lookbook-preview__reason">
+                <p class="lookbook-preview__reason-label">Why you’re seeing them</p>
+                <p class="lookbook-preview__reason-text">Both willing to let the relationship move at the kids’ pace</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="app-overview" id="app">
-      <div class="wrap">
-        <header class="pillars__head">
-          <p class="eyebrow">The App</p>
-          <h2 class="pillars__title">Four tabs, one gentle path</h2>
-        </header>
-        <ol class="app-grid">
-          <li class="app-card">
-            <h3>Discover</h3>
-            <p>Browse member lookbooks one at a time. Pass, save for later, or like; you may see a gentle compatibility note. Mutual likes create a match. Adjust preferences and location scope anytime.</p>
+    <section class="act act--alt">
+      <div class="wrap act__stack reveal">
+        <p class="eyebrow">Act two</p>
+        <h2 class="act__title">Not ready to like? Save for later</h2>
+        <p class="act__lead">Slow discovery — no endless swipe deck. Your pace stays yours.</p>
+        <ul class="pace-row">
+          <li class="pace-chip">
+            <span class="pace-chip__mark" aria-hidden="true">✕</span>
+            <span class="pace-chip__label">Pass for now</span>
           </li>
-          <li class="app-card">
-            <h3>Messages</h3>
-            <p>Chat after you match. Block or report inappropriate behavior to protect your boundaries.</p>
+          <li class="pace-chip pace-chip--soft">
+            <span class="pace-chip__mark" aria-hidden="true">◇</span>
+            <span class="pace-chip__label">Save for later<span class="pace-chip__hint">they won’t be notified</span></span>
           </li>
-          <li class="app-card">
-            <h3>Activities</h3>
-            <p>Host or join offline social meetups, including family-friendly options. Mood tags, icebreaker warm-ups, and gathering-fit notes help set the tone; optional post-event light connect after meetups. Glow Points serve as activity commitment fees; safety rules apply before joining.</p>
+          <li class="pace-chip pace-chip--heart">
+            <span class="pace-chip__mark" aria-hidden="true">♥</span>
+            <span class="pace-chip__label">Know each other slowly</span>
           </li>
-          <li class="app-card">
-            <h3>Profile</h3>
-            <p>Edit your lookbook, set gathering &amp; social preferences, top up points, manage notifications, legal &amp; privacy, account security, and help.</p>
-          </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
-    <section class="pillars" id="features">
-      <div class="wrap">
-        <header class="pillars__head">
-          <p class="eyebrow">What Makes AGAIN Different</p>
-          <h2 class="pillars__title">Designed for Mature Relationships</h2>
-        </header>
-        <ol class="pillar-list">
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">01</span>
-            <div class="pillar-item__content">
-              <h3>Story Lookbook</h3>
-              <p>Introduce yourself through stories, not labels — your profile reads like a personal lookbook.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">02</span>
-            <div class="pillar-item__content">
-              <h3>Compatibility Notes</h3>
-              <p>Values, lifestyle, and gathering style inform gentle hints and discover notes — for feeling, not scoring or guarantees.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">03</span>
-            <div class="pillar-item__content">
-              <h3>Slow Discovery</h3>
-              <p>No endless scrolling — focus on one person at a time. “Save for later” lets you pause without notifying them.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">04</span>
-            <div class="pillar-item__content">
-              <h3>Offline Meetups</h3>
-              <p>Move from online connection to real gatherings. Hosts can pick icebreaker questions; attendees may add warm-up replies. Within 72 hours after an event, mutual light connect opens a timed chat.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">05</span>
-            <div class="pillar-item__content">
-              <h3>Glow Points</h3>
-              <p>In-app virtual currency for joining or hosting activities. Top up via App Store / Google Play; not redeemable for cash.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">06</span>
-            <div class="pillar-item__content">
-              <h3>Safe Community</h3>
-              <p>Report, block, and review workflows including activity reports and host no-show handling. Activity trust badges reflect attendance records, not identity verification. See our <a href="../community.html">Community Guidelines</a>.</p>
-            </div>
-          </li>
-          <li class="pillar-item">
-            <span class="pillar-item__num" aria-hidden="true">07</span>
-            <div class="pillar-item__content">
-              <h3>Post-Event Light Connect</h3>
-              <p>After meeting offline, if both of you want to stay in touch, open a time-limited chat with a message cap. One-sided choices stay private — you set the pace.</p>
-            </div>
-          </li>
-        </ol>
+    <section class="act">
+      <div class="wrap act__narrow reveal">
+        <p class="eyebrow">Act three</p>
+        <h2 class="act__title">Meet offline — then decide how deep</h2>
+        <p class="act__lead">Host or join real gatherings, including family-friendly ones. After you’ve met, a light connect opens only if both of you choose each other — timed, limited, on your terms.</p>
+        <p class="act__highlight">Only mutual interest opens the follow-up chat.</p>
+        <p class="act__aside">Glow Points are a gentle commitment fee for activities — details in the <a href="help.html">Help Center</a>.</p>
       </div>
     </section>
 
-    <section class="safety-strip" id="safety" aria-label="Safety">
-      <div class="wrap safety-strip__inner">
-        <p class="safety-strip__title">Community Safety</p>
-        <p>Report or block from Discover, chat, matched profiles, or activity details. In emergencies, contact local authorities first, then <a href="mailto:support@again.app">support@again.app</a>.</p>
-        <a class="btn btn--ghost btn--sm" href="help.html">FAQ</a>
-      </div>
-    </section>
-
-    <section class="interlude interlude--last" aria-label="Brand voice">
-      <div class="wrap interlude__inner">
+    <section class="close-cta" id="start">
+      <div class="wrap close-cta__inner reveal">
         <blockquote>
-          <p>Not every connection needs to start with impulse.</p>
           <p>Some relationships are meant to unfold slowly.</p>
         </blockquote>
+        <p class="close-cta__lead">Give yourself a chance to begin again — at the right pace.</p>
+        <a
+          class="btn btn--fill"
+          href="mailto:support@again.app?subject=AGAIN%20early%20access"
+        >Start slowly</a>
+        <p class="hero__cta-note">Coming soon · Email for early access</p>
       </div>
     </section>
 
@@ -188,6 +156,9 @@
         <a href="mailto:support@again.app">Contact</a>
         <a class="lang-switch" href="../index.html" hreflang="zh-Hant">繁體中文</a>
       </nav>
+    </div>
+    <div class="wrap footer__safety">
+      <p>Report or block anytime. In emergencies, contact local authorities first, then <a href="mailto:support@again.app">support@again.app</a>.</p>
     </div>
   </footer>
 
