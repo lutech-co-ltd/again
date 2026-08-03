@@ -895,9 +895,16 @@ a:hover { color: var(--ink); }
 
 .lookbook-preview__photo {
   height: 220px;
-  background:
-    linear-gradient(160deg, rgba(122, 107, 138, 0.35), rgba(138, 154, 126, 0.25)),
-    linear-gradient(45deg, #d4c4b0 0%, #c9b8a8 40%, #b9a7c9 100%);
+  overflow: hidden;
+  background: #d4c4b0;
+}
+
+.lookbook-preview__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .lookbook-preview__body {
