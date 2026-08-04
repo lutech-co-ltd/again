@@ -879,7 +879,7 @@ a:hover { color: var(--ink); }
 
 .act__aside a { text-decoration: underline; text-underline-offset: 3px; }
 
-/* Lookbook preview card — 單卡輪播（雅婷／志明） */
+/* Lookbook preview card — 單卡同框淡入輪播（雅婷／志明） */
 
 .lookbook-preview {
   width: 100%;
@@ -888,11 +888,14 @@ a:hover { color: var(--ink); }
 }
 
 .lookbook-preview__stage {
-  display: grid;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 28px;
 }
 
 .lookbook-preview__frame {
-  grid-area: 1 / 1;
+  width: 100%;
   background: #fff;
   border-radius: 28px;
   overflow: hidden;
@@ -900,25 +903,31 @@ a:hover { color: var(--ink); }
   box-shadow:
     0 1px 0 var(--line),
     0 28px 64px rgba(42, 38, 35, 0.08);
-  transform: translateY(0);
-  transition:
-    opacity 0.55s ease,
-    visibility 0.55s ease,
-    transform 0.5s ease,
-    box-shadow 0.5s ease;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 0;
   display: flex;
   flex-direction: column;
+  transition:
+    opacity 0.55s ease,
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+/* 非作用中：疊在同一框上淡出，不佔版面下方 */
+.lookbook-preview__frame:not(.is-active) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 0;
   pointer-events: none;
 }
 
 .lookbook-preview__frame.is-active {
+  position: relative;
   opacity: 1;
-  visibility: visible;
   z-index: 1;
   pointer-events: auto;
+  transform: translateY(0);
 }
 
 .reveal.is-visible .lookbook-preview__frame.is-active {
