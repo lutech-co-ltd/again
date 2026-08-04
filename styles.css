@@ -675,6 +675,12 @@ a:hover { color: var(--ink); }
 
   .lookbook-preview { max-width: 400px; margin: 0 auto; }
 
+  .lookbook-preview__pair {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
   .pace-row {
     flex-direction: column;
     align-items: stretch;
@@ -833,6 +839,20 @@ a:hover { color: var(--ink); }
   align-items: center;
 }
 
+/* 幕一：文案在上、雅婷／志明雙卡在下 */
+.act__lookbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.act__copy--lookbook {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .act__stack,
 .act__narrow {
   max-width: 720px;
@@ -877,6 +897,18 @@ a:hover { color: var(--ink); }
 
 /* Lookbook preview card */
 
+.lookbook-preview {
+  width: 100%;
+  max-width: 760px;
+}
+
+.lookbook-preview__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
 .lookbook-preview__frame {
   background: #fff;
   border-radius: 28px;
@@ -887,10 +919,17 @@ a:hover { color: var(--ink); }
     0 28px 64px rgba(42, 38, 35, 0.08);
   transform: translateY(0);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .reveal.is-visible .lookbook-preview__frame {
   transform: translateY(-4px);
+}
+
+.reveal.is-visible .lookbook-preview__pair .lookbook-preview__frame:nth-child(2) {
+  transition-delay: 0.08s;
 }
 
 .lookbook-preview__photo {
@@ -909,9 +948,16 @@ a:hover { color: var(--ink); }
   object-position: center 32%;
 }
 
+.lookbook-preview__photo--zhiming img {
+  object-position: center 28%;
+}
+
 .lookbook-preview__body {
   padding: 22px 24px 26px;
   background: var(--paper);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .lookbook-preview__name {
