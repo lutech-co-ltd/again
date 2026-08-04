@@ -72,15 +72,15 @@
     </section>
 
     <section class="act" id="how">
-      <div class="wrap act__lookbook reveal">
-        <div class="act__copy act__copy--lookbook">
+      <div class="wrap act__grid reveal">
+        <div class="act__copy">
           <p class="eyebrow">幕一</p>
           <h2 class="act__title">個人頁，像一本生活誌</h2>
           <p class="act__lead">一次好好認識一個人——用故事與生活節奏，而不是一排標籤。</p>
         </div>
-        <aside class="lookbook-preview" aria-label="生活誌預覽示意">
-          <div class="lookbook-preview__pair">
-            <div class="lookbook-preview__frame">
+        <aside class="lookbook-preview" data-lookbook-carousel aria-label="生活誌預覽示意">
+          <div class="lookbook-preview__stage">
+            <div class="lookbook-preview__frame is-active" data-slide="0">
               <div class="lookbook-preview__photo" aria-hidden="true">
                 <img src="./assets/yating-38-frontal.jpg" alt="" width="960" height="1440" decoding="async" />
               </div>
@@ -93,7 +93,7 @@
                 </div>
               </div>
             </div>
-            <div class="lookbook-preview__frame">
+            <div class="lookbook-preview__frame" data-slide="1" aria-hidden="true">
               <div class="lookbook-preview__photo lookbook-preview__photo--zhiming" aria-hidden="true">
                 <img src="./assets/zhiming-41-frontal.jpg" alt="" width="960" height="1440" decoding="async" />
               </div>
@@ -106,6 +106,10 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="lookbook-preview__dots" role="tablist" aria-label="切換示範檔案">
+            <button type="button" class="lookbook-preview__dot is-active" role="tab" aria-selected="true" aria-label="雅婷" data-slide="0"></button>
+            <button type="button" class="lookbook-preview__dot" role="tab" aria-selected="false" aria-label="志明" data-slide="1"></button>
           </div>
         </aside>
       </div>
