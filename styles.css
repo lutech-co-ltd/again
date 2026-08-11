@@ -148,11 +148,25 @@ a:hover { color: var(--ink); }
 }
 
 .header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: "Noto Serif TC", Georgia, serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.22em;
   color: var(--ink) !important;
+}
+
+.header__mark {
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.header__wordmark {
+  line-height: 1;
 }
 
 .header__nav {
