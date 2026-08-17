@@ -743,6 +743,18 @@ a:hover { color: var(--ink); }
   background: var(--paper);
 }
 
+.legal-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.legal-bar .back-link {
+  margin-bottom: 0;
+}
+
 .legal-page h1 {
   font-family: "Noto Serif TC", Georgia, serif;
   font-size: 28px;
@@ -787,6 +799,14 @@ a:hover { color: var(--ink); }
   font-weight: 600;
   margin: 20px 0 8px;
   color: var(--ink-soft);
+}
+
+.legal-page footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--ink-muted);
 }
 
 .btn--sm {
