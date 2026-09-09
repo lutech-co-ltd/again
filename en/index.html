@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=20260910d" />
+  <link rel="stylesheet" href="../styles.css?v=20260910e" />
 </head>
 <body class="landing">
 
@@ -93,6 +93,70 @@
           <p class="eyebrow">Act two</p>
           <h2 class="act__title">In their lookbook, see their activities</h2>
           <p class="act__lead">Read one person at a time — stories and life rhythm, plus a bridge to gatherings they host, join, or mark as interested. Not ready? Save for later. Finished reading? Turn to the next lookbook.</p>
+          <div class="discover-dock" role="group" aria-label="Discover decision bar preview">
+            <div class="discover-dock__side">
+              <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="bmFillEn" x1="3" y1="2" x2="15" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#8C6F5A" stop-opacity="0.3" />
+                    <stop offset="1" stop-color="#8C6F5A" stop-opacity="0.12" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M3.4 2.4h11.2c.7 0 1.2.5 1.2 1.2v17.6l-5.4-3.3a2 2 0 0 0-2.2 0l-5.4 3.3V3.6c0-.7.5-1.2 1.2-1.2z"
+                  fill="url(#bmFillEn)"
+                  stroke="#8C6F5A"
+                  stroke-width="1.75"
+                  stroke-linejoin="round"
+                />
+                <path d="M6.2 6.4h5.6" stroke="#8C6F5A" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
+              </svg>
+              <span class="discover-dock__side-label">Later</span>
+            </div>
+            <div class="discover-dock__main">
+              <div class="discover-dock__main-inner">
+                <svg class="discover-dock__icon discover-dock__icon--main" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M12 21.5s-7.2-5.8-7.2-11.2a7.2 7.2 0 1 1 14.4 0c0 5.4-7.2 11.2-7.2 11.2z"
+                    fill="#FFFFFF"
+                    fill-opacity="0.22"
+                    stroke="#FFFFFF"
+                    stroke-width="1.7"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="8.8" r="1.85" fill="#FFFFFF" fill-opacity="0.95" />
+                  <path
+                    d="M8.9 14c.7-1.85 1.9-2.75 3.1-2.75s2.4.9 3.1 2.75"
+                    fill="#FFFFFF"
+                    fill-opacity="0.95"
+                  />
+                </svg>
+                <span class="discover-dock__main-label">See their activities</span>
+              </div>
+              <span class="discover-dock__sub">Meet gently through occasions</span>
+            </div>
+            <div class="discover-dock__side">
+              <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M3.2 3h11.6A1.6 1.6 0 0 1 16.4 4.6v14.8a1.6 1.6 0 0 1-1.6 1.6H3.2A1.6 1.6 0 0 1 1.6 19.4V4.6A1.6 1.6 0 0 1 3.2 3z"
+                  fill="#8C6F5A"
+                  fill-opacity="0.12"
+                  stroke="#8C6F5A"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path d="M5.4 7.2h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M5.4 10.4h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M5.4 13.6h3.8" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+                <path
+                  d="M7.6 20.8C10.4 18.8 13.2 15.6 15.2 11.4C16.2 13.8 16 16.8 14.2 19C12.4 21.2 9.8 21.8 7.6 20.8Z"
+                  fill="#8C6F5A"
+                />
+              </svg>
+              <span class="discover-dock__side-label">Next</span>
+            </div>
+          </div>
+          <p class="act__aside act__aside--under-dock">Beside a passage you may also leave “Want to know them” — a gentle intent, not a swipe-like.</p>
         </div>
         <aside class="lookbook-preview" data-lookbook-carousel aria-label="Lookbook preview">
           <div class="lookbook-preview__stage">
@@ -168,72 +232,6 @@
             <button type="button" class="lookbook-preview__dot" role="tab" aria-selected="false" aria-label="Zhiming" data-slide="1"></button>
           </div>
         </aside>
-      </div>
-      <div class="wrap act__stack reveal" style="padding-top: 0.5rem;">
-        <div class="discover-dock" role="group" aria-label="Discover decision bar preview">
-          <div class="discover-dock__side">
-            <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
-              <defs>
-                <linearGradient id="bmFillEn" x1="3" y1="2" x2="15" y2="22" gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#8C6F5A" stop-opacity="0.3" />
-                  <stop offset="1" stop-color="#8C6F5A" stop-opacity="0.12" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M3.4 2.4h11.2c.7 0 1.2.5 1.2 1.2v17.6l-5.4-3.3a2 2 0 0 0-2.2 0l-5.4 3.3V3.6c0-.7.5-1.2 1.2-1.2z"
-                fill="url(#bmFillEn)"
-                stroke="#8C6F5A"
-                stroke-width="1.75"
-                stroke-linejoin="round"
-              />
-              <path d="M6.2 6.4h5.6" stroke="#8C6F5A" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
-            </svg>
-            <span class="discover-dock__side-label">Later</span>
-          </div>
-          <div class="discover-dock__main">
-            <div class="discover-dock__main-inner">
-              <svg class="discover-dock__icon discover-dock__icon--main" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path
-                  d="M12 21.5s-7.2-5.8-7.2-11.2a7.2 7.2 0 1 1 14.4 0c0 5.4-7.2 11.2-7.2 11.2z"
-                  fill="#FFFFFF"
-                  fill-opacity="0.22"
-                  stroke="#FFFFFF"
-                  stroke-width="1.7"
-                  stroke-linejoin="round"
-                />
-                <circle cx="12" cy="8.8" r="1.85" fill="#FFFFFF" fill-opacity="0.95" />
-                <path
-                  d="M8.9 14c.7-1.85 1.9-2.75 3.1-2.75s2.4.9 3.1 2.75"
-                  fill="#FFFFFF"
-                  fill-opacity="0.95"
-                />
-              </svg>
-              <span class="discover-dock__main-label">See their activities</span>
-            </div>
-            <span class="discover-dock__sub">Meet gently through occasions</span>
-          </div>
-          <div class="discover-dock__side">
-            <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
-              <path
-                d="M3.2 3h11.6A1.6 1.6 0 0 1 16.4 4.6v14.8a1.6 1.6 0 0 1-1.6 1.6H3.2A1.6 1.6 0 0 1 1.6 19.4V4.6A1.6 1.6 0 0 1 3.2 3z"
-                fill="#8C6F5A"
-                fill-opacity="0.12"
-                stroke="#8C6F5A"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-              <path d="M5.4 7.2h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M5.4 10.4h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
-              <path d="M5.4 13.6h3.8" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
-              <path
-                d="M7.6 20.8C10.4 18.8 13.2 15.6 15.2 11.4C16.2 13.8 16 16.8 14.2 19C12.4 21.2 9.8 21.8 7.6 20.8Z"
-                fill="#8C6F5A"
-              />
-            </svg>
-            <span class="discover-dock__side-label">Next</span>
-          </div>
-        </div>
-        <p class="act__aside" style="margin-top: 1rem;">Beside a passage you may also leave “Want to know them” — a gentle intent, not a swipe-like.</p>
       </div>
     </section>
 

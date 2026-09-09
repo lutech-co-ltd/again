@@ -685,7 +685,20 @@ a:hover { color: var(--ink); }
     text-align: center;
   }
 
-  .act__copy { max-width: 520px; margin: 0 auto; }
+  .act__copy {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .act__copy .discover-dock {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .act__aside--under-dock {
+    text-align: center;
+  }
 
   .lookbook-preview {
     max-width: 360px;
@@ -888,7 +901,22 @@ a:hover { color: var(--ink); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px 64px;
-  align-items: center;
+  align-items: start;
+}
+
+.act__copy {
+  max-width: 34rem;
+}
+
+.act__copy .discover-dock {
+  width: 100%;
+  max-width: 100%;
+  margin: 28px 0 0;
+}
+
+.act__aside--under-dock {
+  margin-top: 14px;
+  text-align: left;
 }
 
 .act__stack,
@@ -1174,10 +1202,10 @@ a:hover { color: var(--ink); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 8px;
   max-width: 420px;
   margin: 40px auto 0;
-  padding: 12px 14px;
+  padding: 12px 12px;
   border-radius: 28px;
   border: 1px solid rgba(226, 210, 192, 0.9);
   background: rgba(255, 247, 236, 0.92);
