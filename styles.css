@@ -912,21 +912,22 @@ a:hover { color: var(--ink); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px 64px;
-  align-items: start;
+  align-items: center;
 }
 
 .act__copy {
   max-width: 34rem;
+  align-self: center;
 }
 
 .act__copy .discover-dock {
   width: 100%;
-  max-width: 22.5rem;
-  margin: 28px 0 0;
+  max-width: 100%;
+  margin: 44px 0 0;
 }
 
 .act__aside--under-dock {
-  margin-top: 14px;
+  margin-top: 16px;
   text-align: left;
 }
 
@@ -1048,40 +1049,11 @@ a:hover { color: var(--ink); }
 }
 
 .lookbook-preview__body {
-  position: relative;
-  padding: 22px 24px 36px;
+  padding: 22px 24px 26px;
   background: #fff;
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.want-to-know {
-  position: absolute;
-  right: 18px;
-  bottom: -14px;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 36px;
-  padding: 8px 14px 8px 12px;
-  border-radius: 16px;
-  background: #8E7DAD;
-  box-shadow: 0 8px 20px rgba(142, 125, 173, 0.28);
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.want-to-know__icon {
-  width: 16px;
-  height: 16px;
-  display: block;
-  flex-shrink: 0;
 }
 
 .lookbook-preview__dots {
