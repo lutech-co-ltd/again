@@ -732,6 +732,17 @@ a:hover { color: var(--ink); }
     font-size: 10px;
   }
 
+  .want-to-know {
+    right: 14px;
+    bottom: -12px;
+    font-size: 12px;
+    padding: 7px 12px 7px 10px;
+  }
+
+  .act__copy .discover-dock {
+    max-width: 22.5rem;
+  }
+
   .his-activities__name {
     font-size: 13px;
   }
@@ -910,7 +921,7 @@ a:hover { color: var(--ink); }
 
 .act__copy .discover-dock {
   width: 100%;
-  max-width: 100%;
+  max-width: 22.5rem;
   margin: 28px 0 0;
 }
 
@@ -1158,6 +1169,13 @@ a:hover { color: var(--ink); }
   font-size: 13px;
   font-weight: 600;
   color: #8E7DAD;
+}
+
+.his-activities__see-all {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8E7DAD;
+  line-height: 1.2;
 }
 
 .his-activities__list {
