@@ -689,21 +689,12 @@ a:hover { color: var(--ink); }
     max-width: 520px;
     margin: 0 auto;
     text-align: center;
-    min-height: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    justify-content: flex-start;
-    gap: 36px;
-  }
-
-  .act__copy-bottom {
-    margin-top: 0;
-    padding-top: 0;
   }
 
   .act__copy .discover-dock {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     max-width: 100%;
   }
 
@@ -745,7 +736,6 @@ a:hover { color: var(--ink); }
 
   .act__copy .discover-dock {
     max-width: 100%;
-    margin-top: 36px;
   }
 
   .his-activities__name {
@@ -917,35 +907,19 @@ a:hover { color: var(--ink); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px 64px;
-  align-items: stretch;
+  align-items: center;
 }
 
 .act__copy {
   max-width: 34rem;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* 對齊右側照片卡高度：文案落在上段、三鍵落在下段 */
-  min-height: 100%;
-  padding-top: 6%;
-  padding-bottom: 10%;
-  box-sizing: border-box;
-}
-
-.act__copy-top {
-  max-width: 34rem;
-}
-
-.act__copy-bottom {
-  margin-top: auto;
-  padding-top: 48px;
+  align-self: center;
 }
 
 .act__copy .discover-dock {
   width: 100%;
   max-width: 100%;
-  margin: 0;
+  /* 比上一版再拉開：文案略上、三鍵略下 */
+  margin: 68px 0 0;
 }
 
 .act__aside--under-dock {
