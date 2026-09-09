@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=20260812header" />
+  <link rel="stylesheet" href="./styles.css?v=20260910d" />
 </head>
 <body class="landing">
 
@@ -103,9 +103,29 @@
               <div class="lookbook-preview__body">
                 <p class="lookbook-preview__name">雅婷，38 歲</p>
                 <p class="lookbook-preview__meta">台北市 · 大安區</p>
-                <div class="lookbook-preview__reason">
-                  <p class="lookbook-preview__reason-label">他的活動</p>
-                  <p class="lookbook-preview__reason-text">週末樹蔭散步 · 大安 · 她有興趣</p>
+                <div class="his-activities" aria-label="他的活動">
+                  <div class="his-activities__head">
+                    <p class="his-activities__title">他的活動</p>
+                  </div>
+                  <ul class="his-activities__list">
+                    <li class="his-activities__row">
+                      <img
+                        class="his-activities__thumb"
+                        src="./assets/activityCategories/park_walk.webp"
+                        alt=""
+                        width="72"
+                        height="72"
+                        decoding="async"
+                      />
+                      <div class="his-activities__copy">
+                        <div class="his-activities__title-row">
+                          <span class="his-activities__name">週末樹蔭散步</span>
+                          <span class="his-activities__badge">有興趣</span>
+                        </div>
+                        <p class="his-activities__meta-line">大安 · 9/20（週六）</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -116,9 +136,29 @@
               <div class="lookbook-preview__body">
                 <p class="lookbook-preview__name">志明，41 歲</p>
                 <p class="lookbook-preview__meta">台北市 · 產品設計</p>
-                <div class="lookbook-preview__reason">
-                  <p class="lookbook-preview__reason-label">他的活動</p>
-                  <p class="lookbook-preview__reason-text">手作咖啡午後 · 中山 · 他主辦</p>
+                <div class="his-activities" aria-label="他的活動">
+                  <div class="his-activities__head">
+                    <p class="his-activities__title">他的活動</p>
+                  </div>
+                  <ul class="his-activities__list">
+                    <li class="his-activities__row">
+                      <img
+                        class="his-activities__thumb"
+                        src="./assets/activityCategories/coffee_chat.webp"
+                        alt=""
+                        width="72"
+                        height="72"
+                        decoding="async"
+                      />
+                      <div class="his-activities__copy">
+                        <div class="his-activities__title-row">
+                          <span class="his-activities__name">手作咖啡午後</span>
+                          <span class="his-activities__badge">主辦</span>
+                        </div>
+                        <p class="his-activities__meta-line">中山 · 9/27（週六）</p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -130,20 +170,69 @@
         </aside>
       </div>
       <div class="wrap act__stack reveal" style="padding-top: 0.5rem;">
-        <ul class="pace-row">
-          <li class="pace-chip pace-chip--soft">
-            <span class="pace-chip__mark" aria-hidden="true">🔖</span>
-            <span class="pace-chip__label">先收進稍後</span>
-          </li>
-          <li class="pace-chip pace-chip--heart">
-            <span class="pace-chip__mark" aria-hidden="true">◇</span>
-            <span class="pace-chip__label">看看他的活動</span>
-          </li>
-          <li class="pace-chip">
-            <span class="pace-chip__mark" aria-hidden="true">››</span>
-            <span class="pace-chip__label">讀下一篇</span>
-          </li>
-        </ul>
+        <div class="discover-dock" role="group" aria-label="發現頁決策列示意">
+          <div class="discover-dock__side">
+            <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="bmFillZh" x1="3" y1="2" x2="15" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#8C6F5A" stop-opacity="0.3" />
+                  <stop offset="1" stop-color="#8C6F5A" stop-opacity="0.12" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M3.4 2.4h11.2c.7 0 1.2.5 1.2 1.2v17.6l-5.4-3.3a2 2 0 0 0-2.2 0l-5.4 3.3V3.6c0-.7.5-1.2 1.2-1.2z"
+                fill="url(#bmFillZh)"
+                stroke="#8C6F5A"
+                stroke-width="1.75"
+                stroke-linejoin="round"
+              />
+              <path d="M6.2 6.4h5.6" stroke="#8C6F5A" stroke-width="1.6" stroke-linecap="round" opacity="0.55" />
+            </svg>
+            <span class="discover-dock__side-label">稍後</span>
+          </div>
+          <div class="discover-dock__main">
+            <div class="discover-dock__main-inner">
+              <svg class="discover-dock__icon discover-dock__icon--main" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 21.5s-7.2-5.8-7.2-11.2a7.2 7.2 0 1 1 14.4 0c0 5.4-7.2 11.2-7.2 11.2z"
+                  fill="#FFFFFF"
+                  fill-opacity="0.22"
+                  stroke="#FFFFFF"
+                  stroke-width="1.7"
+                  stroke-linejoin="round"
+                />
+                <circle cx="12" cy="8.8" r="1.85" fill="#FFFFFF" fill-opacity="0.95" />
+                <path
+                  d="M8.9 14c.7-1.85 1.9-2.75 3.1-2.75s2.4.9 3.1 2.75"
+                  fill="#FFFFFF"
+                  fill-opacity="0.95"
+                />
+              </svg>
+              <span class="discover-dock__main-label">看看他的活動</span>
+            </div>
+            <span class="discover-dock__sub">先在活動裡慢慢認識</span>
+          </div>
+          <div class="discover-dock__side">
+            <svg class="discover-dock__icon" viewBox="0 0 18 24" aria-hidden="true" focusable="false">
+              <path
+                d="M3.2 3h11.6A1.6 1.6 0 0 1 16.4 4.6v14.8a1.6 1.6 0 0 1-1.6 1.6H3.2A1.6 1.6 0 0 1 1.6 19.4V4.6A1.6 1.6 0 0 1 3.2 3z"
+                fill="#8C6F5A"
+                fill-opacity="0.12"
+                stroke="#8C6F5A"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path d="M5.4 7.2h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M5.4 10.4h7.2" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+              <path d="M5.4 13.6h3.8" stroke="#8C6F5A" stroke-width="1.8" stroke-linecap="round" />
+              <path
+                d="M7.6 20.8C10.4 18.8 13.2 15.6 15.2 11.4C16.2 13.8 16 16.8 14.2 19C12.4 21.2 9.8 21.8 7.6 20.8Z"
+                fill="#8C6F5A"
+              />
+            </svg>
+            <span class="discover-dock__side-label">下一篇</span>
+          </div>
+        </div>
         <p class="act__aside" style="margin-top: 1rem;">內容旁也可留下「想認識」——不是刷卡式喜歡，而是溫柔的心意。</p>
       </div>
     </section>
